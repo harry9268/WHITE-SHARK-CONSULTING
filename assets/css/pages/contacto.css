@@ -1,0 +1,31 @@
+/* ==========================================================================
+   WHITE SHARK CONSULTING — pages/contacto.css
+   Página de contacto (contacto.html / en/contact.html).
+   ========================================================================== */
+
+.contact-page .split { align-items: start; }
+@media (min-width: 960px) {
+  .contact-page .split { grid-template-columns: 0.85fr 1.15fr; }
+}
+
+.contact-page__aside > * + * { margin-top: var(--space-5); }
+.contact-page__aside p { color: var(--color-text-muted); }
+.contact-page__aside .contact-list { margin-top: var(--space-6); }
+
+.contact-page__image {
+  margin-top: var(--space-7) !important;
+  display: none;
+}
+.contact-page__image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+@media (min-width: 960px) { .contact-page__image { display: block; } }
+
+.closing-band {
+  padding-block: clamp(4rem, 3rem + 4vw, 6.5rem);
+  text-align: center;
+}
+.closing-band .closing-quote { max-width: 26ch; margin-inline: auto; font-size: var(--fs-xl); }

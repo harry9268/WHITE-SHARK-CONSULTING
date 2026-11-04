@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- [PENDIENTE] Sustituir el dominio si no es el definitivo -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.whitesharkconsulting.com/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/en/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/servicios.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/servicios.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/en/services.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/servicios.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/contacto.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/contacto.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/en/contact.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/contacto.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/aviso-legal.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/aviso-legal.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/en/legal-notice.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/aviso-legal.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/politica-privacidad.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/politica-privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/politica-privacidad.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/en/privacy-policy.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/politica-privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/politica-privacidad.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/politica-cookies.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/politica-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/politica-cookies.html"/>
+  </url>
+  <url>
+    <loc>https://www.whitesharkconsulting.com/en/cookie-policy.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.whitesharkconsulting.com/politica-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.whitesharkconsulting.com/en/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.whitesharkconsulting.com/politica-cookies.html"/>
+  </url>
+</urlset>

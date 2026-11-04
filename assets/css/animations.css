@@ -1,0 +1,78 @@
+/* ==========================================================================
+   WHITE SHARK CONSULTING — animations.css
+   Animaciones suaves. Todo el contenido es visible sin JavaScript:
+   animaciones.js solo añade .anim-ready a los elementos que aún no se ven,
+   y .is-visible cuando entran en pantalla.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Aparición al hacer scroll
+   -------------------------------------------------------------------------- */
+[data-animate].anim-ready {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition: opacity 900ms var(--ease), transform 900ms var(--ease);
+  will-change: opacity, transform;
+}
+[data-animate="fade"].anim-ready { transform: none; }
+[data-animate="left"].anim-ready { transform: translate3d(-28px, 0, 0); }
+[data-animate="right"].anim-ready { transform: translate3d(28px, 0, 0); }
+[data-animate="zoom"].anim-ready { transform: scale(0.96); }
+
+[data-animate].anim-ready.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Retrasos escalonados para grupos (data-delay="1".."4") */
+[data-delay="1"] { transition-delay: 90ms !important; }
+[data-delay="2"] { transition-delay: 180ms !important; }
+[data-delay="3"] { transition-delay: 270ms !important; }
+[data-delay="4"] { transition-delay: 360ms !important; }
+
+/* --------------------------------------------------------------------------
+   2. Entrada del hero (solo CSS)
+   -------------------------------------------------------------------------- */
+/* Opacidad inicial 0.01 (no 0): así el H1 cuenta para el LCP desde el primer pintado (Lighthouse). */
+@keyframes fade-up {
+  from { opacity: 0.01; transform: translate3d(0, 24px, 0); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes slow-zoom {
+  from { transform: scale(1.08); }
+  to { transform: scale(1); }
+}
+@keyframes line-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes scroll-cue {
+  0% { transform: translateY(-100%); }
+  60%, 100% { transform: translateY(200%); }
+}
+
+.hero__media img { animation: slow-zoom 9s var(--ease) both; }
+
+.hero__content > * { animation: fade-up 1s var(--ease) both; }
+.hero__content > :nth-child(1) { animation-delay: 150ms; }
+.hero__content > :nth-child(2) { animation-delay: 300ms; }
+.hero__content > :nth-child(3) { animation-delay: 450ms; }
+.hero__content > :nth-child(4) { animation-delay: 600ms; }
+
+.page-hero .container > * { animation: fade-up 0.9s var(--ease) both; }
+.page-hero .container > :nth-child(2) { animation-delay: 120ms; }
+.page-hero .container > :nth-child(3) { animation-delay: 240ms; }
+.page-hero .container > :nth-child(4) { animation-delay: 360ms; }
+
+.hero__scroll-line::after { animation: scroll-cue 2.2s var(--ease) infinite; }
+
+/* --------------------------------------------------------------------------
+   3. Movimiento reducido
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  [data-animate].anim-ready { opacity: 1; transform: none; transition: none; }
+  .hero__media img,
+  .hero__content > *,
+  .page-hero .container > *,
+  .hero__scroll-line::after { animation: none; }
+}

@@ -1,0 +1,226 @@
+/* ==========================================================================
+   WHITE SHARK CONSULTING — pages/home.css
+   Estilos exclusivos de la página de inicio (index.html / en/index.html).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero
+   -------------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: calc(var(--header-h) + 3rem) 0 7rem;
+  background: var(--color-navy);
+  color: var(--color-white);
+  overflow: hidden;
+}
+.hero__media,
+.hero__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(11, 31, 51, 0.55) 0%, rgba(11, 31, 51, 0) 30%),
+    linear-gradient(0deg, rgba(7, 21, 36, 0.9) 0%, rgba(7, 21, 36, 0) 40%),
+    linear-gradient(95deg, rgba(11, 31, 51, 0.96) 0%, rgba(11, 31, 51, 0.82) 45%, rgba(11, 31, 51, 0.35) 100%);
+}
+
+.hero__content { max-width: 980px; }
+.hero h1 { margin-top: var(--space-5); font-size: clamp(2.25rem, 1.4rem + 3.6vw, 4.5rem); line-height: 1.06; }
+.hero h1 .accent { display: block; color: var(--color-accent); }
+.hero__lead {
+  max-width: 620px;
+  margin-top: var(--space-6);
+  font-size: var(--fs-md);
+  line-height: 1.65;
+  color: var(--color-text-inverse-muted);
+}
+.hero .btn-group { margin-top: var(--space-7); }
+@media (max-width: 479px) {
+  .hero .btn-group .btn { width: 100%; }
+}
+
+/* Franja inferior del hero */
+.hero__meta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid var(--color-line-dark);
+}
+.hero__meta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  min-height: 72px;
+  padding-right: calc(var(--gutter) + 72px); /* deja sitio al botón de WhatsApp */
+  font-size: var(--fs-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-inverse-muted);
+}
+.hero__meta-list { display: none; gap: var(--space-6); list-style: none; padding: 0; }
+.hero__meta-list li { display: flex; align-items: center; gap: var(--space-3); }
+.hero__meta-list li + li::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--color-accent); margin-right: var(--space-3); }
+@media (min-width: 768px) { .hero__meta-list { display: flex; } }
+
+.hero__scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-text-inverse-muted);
+  text-decoration: none;
+}
+.hero__scroll:hover { color: var(--color-white); }
+.hero__scroll-line {
+  position: relative;
+  width: 1px;
+  height: 36px;
+  background: var(--color-line-dark);
+  overflow: hidden;
+}
+.hero__scroll-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 50%;
+  background: var(--color-accent);
+}
+
+/* --------------------------------------------------------------------------
+   2. Quiénes somos
+   -------------------------------------------------------------------------- */
+.about__text > * + * { margin-top: var(--space-5); }
+.about__text p { color: var(--color-text-muted); font-size: 1.0625rem; }
+.about__text p.about__intro { font-size: var(--fs-md); color: var(--color-text); line-height: 1.6; }
+
+.about__keys {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4) var(--space-5);
+  margin-top: var(--space-6) !important;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-line);
+  list-style: none;
+  padding-left: 0;
+}
+@media (min-width: 600px) { .about__keys { grid-template-columns: repeat(4, 1fr); } }
+.about__keys li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-navy);
+}
+.about__keys .icon { width: 18px; height: 18px; color: var(--color-accent); stroke-width: 2; }
+
+.about__media { padding: 0 24px 24px 0; }
+
+/* --------------------------------------------------------------------------
+   3. Servicios (resumen)
+   -------------------------------------------------------------------------- */
+.services-intro {
+  display: grid;
+  gap: var(--space-5);
+  margin-bottom: var(--space-7);
+}
+.services-intro .section-head { margin-bottom: 0; }
+@media (min-width: 960px) {
+  .services-intro { grid-template-columns: 1fr auto; align-items: end; }
+}
+
+/* --------------------------------------------------------------------------
+   4. Filosofía
+   -------------------------------------------------------------------------- */
+.philosophy__text { display: grid; gap: var(--space-5); }
+.philosophy__text p { color: var(--color-text-muted); font-size: 1.0625rem; }
+.philosophy__text p.philosophy__strong {
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-navy);
+  padding-left: var(--space-5);
+  border-left: 2px solid var(--color-accent);
+}
+
+.statement {
+  position: relative;
+  isolation: isolate;
+  padding-block: clamp(6rem, 4rem + 8vw, 11rem);
+  background: var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+  overflow: hidden;
+}
+.statement__media,
+.statement__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.statement::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(11, 31, 51, 0.88) 0%, rgba(11, 31, 51, 0.72) 50%, rgba(11, 31, 51, 0.92) 100%);
+}
+.statement__text {
+  max-width: 1000px;
+  margin-inline: auto;
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 1.1rem + 3vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.statement__text em { font-style: normal; color: var(--color-accent); }
+.statement__rule {
+  width: 1px;
+  height: 64px;
+  margin: 0 auto var(--space-6);
+  background: linear-gradient(var(--color-accent), transparent);
+}
+
+/* --------------------------------------------------------------------------
+   5. Por qué elegirnos
+   -------------------------------------------------------------------------- */
+.why .section-head { margin-bottom: var(--space-6); }
+
+/* --------------------------------------------------------------------------
+   6. Contacto (inicio)
+   -------------------------------------------------------------------------- */
+.contact-home__aside > * + * { margin-top: var(--space-5); }
+.contact-home__aside .contact-list { margin-top: var(--space-6); }
+.contact-home__aside .closing-quote {
+  margin-top: var(--space-7);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-line-dark);
+}
+@media (min-width: 960px) {
+  .contact-home .split { align-items: start; grid-template-columns: 0.9fr 1.1fr; }
+}

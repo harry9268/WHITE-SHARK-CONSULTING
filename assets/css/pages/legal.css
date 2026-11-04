@@ -1,0 +1,46 @@
+/* ==========================================================================
+   WHITE SHARK CONSULTING — pages/legal.css
+   Aviso legal, privacidad, cookies y página 404.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Páginas legales
+   -------------------------------------------------------------------------- */
+.legal { padding-block: clamp(3.5rem, 3rem + 3vw, 6rem); }
+
+.legal__notice {
+  max-width: 760px;
+  margin-bottom: var(--space-6);
+  padding: var(--space-4) var(--space-5);
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-offwhite);
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   2. Página 404
+   -------------------------------------------------------------------------- */
+.error-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--header-h) + 3rem) 0 4rem;
+  background: var(--color-navy);
+  color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+.error-page__code {
+  font-family: var(--font-heading);
+  font-size: clamp(6rem, 4rem + 12vw, 13rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-accent);
+}
+.error-page h1 { margin-top: var(--space-5); font-size: var(--fs-xl); }
+.error-page p { max-width: 520px; margin-top: var(--space-4); color: var(--color-text-inverse-muted); font-size: var(--fs-md); }
+.error-page .btn-group { margin-top: var(--space-7); }
